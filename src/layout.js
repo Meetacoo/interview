@@ -3,7 +3,6 @@ import {Outlet, useNavigate} from "react-router-dom";
 const Layout = ({navigation}) => {
   const navigate = useNavigate();
 
-  console.log(window.location.href.includes('/input'))
   return (
     <div>
       <div className="header">
