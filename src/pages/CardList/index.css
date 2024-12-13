@@ -1,0 +1,36 @@
+.card {
+  background-color: #FFF0F1;
+  height: 136px;
+  width: 430px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  padding: 0 24px 0 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-left {
+  text-align: left;
+  max-width: 250px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 22px;
+}
+
+.button {
+  width: 108px !important;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FF0;
+}
