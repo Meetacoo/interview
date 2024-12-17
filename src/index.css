@@ -18,7 +18,7 @@ html {
 }
 
 .header {
-  background: #04c4fa;
+  background:#FFAA20;
   display: flex;
   height: 64px;
   align-items: center;
@@ -26,6 +26,14 @@ html {
   padding: 0 24px;
   font-size: 16px;
   color: #FFFFFF;
+}
+
+.logo {
+  background-image: url("./asset/logo.png");
+  width: 100px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
 }
 
 .header-link {
@@ -45,7 +53,7 @@ html {
 }
 
 .layout-inner {
-  min-height: calc(100vh - 88px);
+  min-height: calc(100vh - 112px);
   margin: 12px;
   padding: 12px;
   background: #FFF;

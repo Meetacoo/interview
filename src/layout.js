@@ -1,4 +1,5 @@
 import {Outlet, useNavigate} from "react-router-dom";
+import logo from './asset/logo.png';
 
 const Layout = ({navigation}) => {
   const navigate = useNavigate();
@@ -6,6 +7,9 @@ const Layout = ({navigation}) => {
   return (
     <div>
       <div className="header">
+        <div className="logo">
+          {/*<img src={logo} />*/}
+        </div>
         {
           navigation.map(({label, url}) => (
             <div
