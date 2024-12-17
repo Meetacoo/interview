@@ -1,12 +1,13 @@
 import {useEffect} from "react";
 
 const jsonData = {
-  tagName: 'ul',
+  tagName: 'div',
   children: [
-    { tagName: 'li', textContent: 'Item 1' },
-    { tagName: 'li', textContent: 'Item 2' },
-    { tagName: 'li', textContent: 'Item 3' }
-  ]
+    { tagName: 'div', textContent: 'Item 1', attributes: {style: "color: pink"} },
+    { tagName: 'div', textContent: 'Item 2' },
+    { tagName: 'ul', textContent: 'Item 3', children: [{ tagName: 'li', textContent: 'Item 3-1' }] }
+  ],
+  attributes: {style: "color: skyblue"}
 };
 
 const createElementFromJSON = (json) => {
