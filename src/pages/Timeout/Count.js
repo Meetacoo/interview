@@ -1,7 +1,23 @@
 import {useEffect, useState} from "react";
+import useCount from "./useCount";
 
 const Count = () => {
   const [markArray, setMarkArray] = useState([]);
+
+  const [count, setCount] = useState(0);
+  const countTimes = useCount(0);
+
+  // 每次 +1
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount(prev => prev + 1);
+    }, 1000);
+
+    // 清除副作用，在严格模式下不清除会每次 +2
+    return () => {
+      clearInterval(timer);
+    }
+  }, []);
 
   useEffect(() => {
     const task = async () => {
@@ -23,7 +39,11 @@ const Count = () => {
     task();
   }, []);
   return (
-    <div>--{markArray}</div>
+    <div>
+      <div>Promise: {markArray}</div>
+      <div>setInterval计数器: {count}</div>
+      <div>hook计数器: {countTimes}</div>
+    </div>
   )
 };
 
