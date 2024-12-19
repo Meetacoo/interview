@@ -1,4 +1,4 @@
-import {CounterButton, CardList, Input, Timeout, JsonToEl, TreeArray, PerformanceOptimization} from './pages';
+import {CounterButton, CardList, Input, Timeout, JsonToEl, TreeArray, PerformanceOptimization, QA} from './pages';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Layout from "./layout";
@@ -11,6 +11,7 @@ const navigation = [
   {label: 'JSON转EL', url: '/json-el'},
   {label: 'TreeArray', url: '/tree'},
   {label: '性能优化', url: '/performance'},
+  {label: 'QA', url: '/qa'},
 ];
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='json-el' element={<JsonToEl/>}/>
           <Route path='tree' element={<TreeArray/>}/>
           <Route path='performance' element={<PerformanceOptimization/>}/>
+          <Route path='qa' element={<QA/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
