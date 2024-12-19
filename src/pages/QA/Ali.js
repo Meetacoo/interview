@@ -1,7 +1,7 @@
 const Ali = () => {
   return (
     <div>
-      <div>一面：</div>
+      <div>一面（电话面试）：</div>
       <ol>
         <li>自我介绍</li>
         <li>Taro 设置 title 的方法</li>
@@ -45,7 +45,7 @@ const Ali = () => {
           </ul>
         </li>
       </ol>
-      <div>二面</div>
+      <div>二面（视频面试）：</div>
       <ol>
         <li>自我介绍</li>
         <li>使用过的 redux 中间件，有什么用
@@ -58,6 +58,9 @@ const Ali = () => {
         <li>useContext 的优势和弊端是什么</li>
         <li>useContext 和 redux 只能使用一个吗</li>
         <li>什么情况下使用 useContext，什么情况下使用 redux</li>
+        <li>如何实现权限控制的</li>
+        <li>适配移动端的方法都有哪些</li>
+        <li>对薪资有什么想法，外包是不是过渡</li>
       </ol>
     </div>
   )
