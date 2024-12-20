@@ -1,0 +1,12 @@
+.outer {
+    display: flex;
+}
+
+.span {
+    display: inline-block;
+    width: 100px;
+}
+
+.btn {
+    flex: 1;
+}
